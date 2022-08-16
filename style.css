@@ -1,0 +1,162 @@
+:root{
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    /* font-family: 'Karla', sans-serif; 400 700 */
+    --blue: #27498C;
+    --dark-blue: #1C3059;
+    --dark-sky: #457ABF;
+    --sky-blue: #6CA6D9;
+    --cream: #F2E3B6;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+a,
+.attribution{
+    color: #000;
+    text-align: center;
+}
+.cards{
+    width: 80vw;
+}
+.first-card{
+    background-color: var(--dark-blue);
+}
+.second-card{
+    background-color: var(--sky-blue);
+}
+.third-card{
+    background-color: var(--dark-sky);
+}
+.first-card,
+.second-card,
+.third-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 27vh;
+}
+h1{
+    color: var(--cream);
+    font-size: 20px;
+}
+h2{
+    color: var(--sky-blue);
+    font-size: 18px;
+}
+h3{
+    color: var(--dark-blue);
+}
+p{
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+}
+button{
+    background-color: var(--blue);
+    color: var(--Light-Gray);
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    width: 80%;
+}
+.third-card p{
+    color: var(--dark-blue);
+}
+.price{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+.price span{
+    font-size: 12px;
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+@media screen and (min-width:640px) {
+    .second-part{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cards{
+        max-width: 820px;
+    }
+    .first-card{
+        padding-left: 45px;
+        padding-right: 20px;
+    }
+    .second-card,
+    .third-card{
+        height: 340px;
+        padding-left: 45px;
+        padding-right: 20px;
+    }
+    .first-card{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .second-card{
+        border-bottom-left-radius: 10px;
+    }
+    .third-card{
+        border-bottom-right-radius: 10px;
+        
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .first-card p{
+        font-size: 22px;
+        line-height: 35px;
+        margin-top: -20px;
+    }
+    .price{
+        font-size: 44px;
+    }
+    .price span{
+        font-size: 24px;
+    }
+    .price-description{
+        font-size: 20px;
+    }
+    button{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+    .third-card p{
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 400;
+        margin-top: -50px;
+    }
+    .third-card h3{
+        margin-top: -45px;
+    }
+}
